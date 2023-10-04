@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Heritage Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>World Heritage Blog</h1>
+        <button id="add-blog-button" onclick="openModal()">+</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page Content -->
+        <section id="home-page">
+                <div class="blog-card">
+                </div>
+        </section>
+    </main>
+
+    <!-- Add Blog Modal -->
+    <div id="add-blog-modal" class="modal">
+        <div class="modal-content">
+            <div class="add-blog-card"> 
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add New Blog</h2>
+            <form id="add-blog-form">
+                <label for="blog-poster">Poster (Image URL):</label>
+                <input type="url" id="blog-poster" required>
+                
+                <label for="blog-title">Title:</label>
+                <input type="text" id="blog-title" required>
+    
+                <label for="blog-description">Description:</label>
+                <textarea id="blog-description" required></textarea>
+    
+                <label for="blog-content">Content:</label>
+                <textarea id="blog-content" required></textarea>
+    
+                <button type="submit">Add Blog</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
